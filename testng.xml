@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="classes" name="Suite">
+
+ <parameter name="UserName" value="Selenium"></parameter>
+ <parameter name="Password" value="1234"></parameter>
+
+  <test thread-count="5" name="Sanity Test">
+   <classes>
+    <class name="org.testing.SampleParameters"></class>
+    <class name="org.testing.ParallelMethods"></class>
+  
+   </classes> 
+  </test> <!-- Test -->
+  
+  <test thread-count="5" name="Regression Test">
+   <classes>
+   
+    <class name="org.testing.SampleParameters"></class>
+   
+   </classes> 
+  </test> <!-- Test -->
+  
+</suite> <!-- Suite -->
